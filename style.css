@@ -1,4 +1,5 @@
 /*----------------------- RESET -----------------------*/
+
 *{
     margin:0;
     padding:0;
@@ -14,7 +15,9 @@ img{
     width: 100%;
     height: auto;
 }
+
 /*------------------- VARIABLES-----------------------*/
+
 :root{
     --header-height: 4.5rem;
 
@@ -35,7 +38,9 @@ img{
     --title-font: "Poppins", sans serif;
     --body-font: "DM Sans", sans-serif;
 }
+
 /*----------------------- BASE -----------------------*/
+
 html{
     scroll-behavior: smooth;
 }
@@ -82,6 +87,7 @@ body{
 }
 
 /*----------------------- LAYOUT-----------------------*/
+
 .container{
     margin-left: 1.5rem;
     margin-right: 1.5rem;
@@ -123,6 +129,7 @@ body{
 }
 
 /*----------------------- LOGO -----------------------*/
+
 .logo{
     font: 700 1.31rem var(--title-font);
     color: var(--title-color);
@@ -133,7 +140,9 @@ body{
 .logo-alt span{
     color: var(--body-color);
 }
+
 /*----------------- NAVIGATION -----------------------*/
+
 nav{
     height: var(--header-height);
     display: flex;
@@ -179,7 +188,9 @@ nav .menu{
 nav .menu ul{
     display: none;
 }
+
 /*----------------------- MOSTRAR MENU -----------------------*/
+
 nav.show .menu{
     opacity: 1;
     visibility: visible;
@@ -199,7 +210,9 @@ nav.show .menu ul{
 nav.show ul.grid{
     gap: 4rem;
 }
+
 /*----------------------- TOGGLE -----------------------*/
+
 .toggle{
     color: var(--base-color);
     font-size: 1.5rem;
@@ -219,7 +232,9 @@ nav.show div.icon-close{
     opacity: 1;
     top: 1.5rem;
 }
+
 /*----------------------- HOME -----------------------*/
+
 #home{
     overflow: hidden;
 }
@@ -262,6 +277,7 @@ nav.show div.icon-close{
 }
 
 /*----------------------- ABOUT -----------------------*/
+
 #about{
     background: white;
 }
@@ -297,7 +313,9 @@ nav.show div.icon-close{
     margin-left: 1.5rem;
     margin-right: 1.5rem;
 }
+
 /*------------------- SERVICES -----------------------*/
+
 .cards.grid{
     gap: 1.5rem;
 }
@@ -318,7 +336,9 @@ nav.show div.icon-close{
     font-size: 1.5rem;
     margin-bottom: 0.75rem;
 }
+
 /*-----------------TESTIMONIALS -----------------------*/
+
 #testimonials{
     background: white;
 }
@@ -374,7 +394,9 @@ nav.show div.icon-close{
 .swiper-pagination-bullet-active{
     background: var(--base-color);
 }
+
 /*-----------------CONTACT-----------------------*/
+
 #contact .grid{
     gap: 4rem;
 }
@@ -396,7 +418,9 @@ nav.show div.icon-close{
 #contact ul li i{
     color: var(--base-color);
 }
+
 /*-----------------FOOTER-----------------------*/
+
 footer{
     background: var(--base-color);
 }
@@ -428,7 +452,9 @@ footer .social a{
 footer .social a:hover{
     transform: translateY(-8px);
 }
+
 /*-------------BACK TO TOP------------------*/
+
 .back-to-top{
     background: var(--base-color);
     color: var(--text-color-light);
@@ -457,6 +483,7 @@ footer .social a:hover{
 }
 
 /*==============MEDIA QUERIES==========*/
+
 /*extra large devices: 1200 > */
 
 @media (min-width: 1200px){
@@ -465,21 +492,17 @@ footer .social a:hover{
         max-width: 1120px;
         margin-left: auto;
         margin-right: auto;
-    }
-    
+    }  
     .section{
         padding: 10rem 0;
     }
-
     .section header,
     #testimonials header{
         max-width: 32rem;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-
     }
-    
     .button{
         height: 3.125rem;
     }
@@ -490,12 +513,10 @@ footer .social a:hover{
         visibility: visible;
         top: 0;
     }
-
     nav .menu ul{
         display: flex;
         gap: 2rem;
     }
-
     nav .menu ul li a.title{
         font: 400 1rem var(--body-font);
         -webkit-font-smoothing: antialiased;
@@ -508,6 +529,7 @@ footer .social a:hover{
     nav .icon-menu{
         display: none;
     }
+    
 /* LAYOUT */
     main{
         margin-top: var(--header-height);
@@ -529,11 +551,13 @@ footer .social a:hover{
         max-width: 24rem;
         text-align: left;
     }
+    
 /* ABOUT */
     #about .container{
         margin: 0 auto;
         grid-auto-flow: column;
     }
+    
 /*SERVICES*/
     .cards{
         grid-template-columns: 1fr 1fr 1fr;
@@ -548,6 +572,7 @@ footer .social a:hover{
         margin-left: auto;
         margin-right: auto  ;
     }
+    
 /*CONTACT*/
     #contact .container{
         grid-auto-flow: column;
@@ -557,6 +582,7 @@ footer .social a:hover{
     #contact .text{
         max-width: 25rem;
     }
+    
 /*FOOTER*/
     footer.section{
         padding: 3.75rem 0;
@@ -568,10 +594,9 @@ footer .social a:hover{
     }
     footer .logo{
         size: 2.25rem;
-    }
-
-    
+    }    
 }
+
 /*large devices: 1023 > */
 /*large devices: 992 > */
 @media (min-width: 992px){
